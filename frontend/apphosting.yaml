@@ -41,10 +41,8 @@ env:
     availability:
       - BUILD
       - RUNTIME
-  # TODO: update after the backend Cloud Function is deployed
-  # (`firebase deploy --only functions` prints the function URL).
   - variable: NEXT_PUBLIC_API_URL
-    value: "https://us-central1-project-aivra.cloudfunctions.net/api"
+    value: "https://us-central1-project-aivra.cloudfunctions.net/backend"
     availability:
       - BUILD
       - RUNTIME

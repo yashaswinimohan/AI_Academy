@@ -38,6 +38,7 @@ firebase-debug.log
 project-aivra-firebase-adminsdk-fbsvc-3844a0ef19.json
 *.json
 !package.json
+!package-lock.json
 !tsconfig.json
 !jsconfig.json
 !.eslintrc.json

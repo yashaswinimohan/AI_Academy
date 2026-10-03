@@ -1,0 +1,50 @@
+runConfig:
+  minInstances: 0
+  maxInstances: 1
+  concurrency: 80
+  cpu: 1
+  memoryMiB: 512
+
+env:
+  - variable: NEXT_PUBLIC_FIREBASE_API_KEY
+    value: "AIzaSyBPbMM-8T4Qzqn2sFHp2U0x3ginitah4X0"
+    availability:
+      - BUILD
+      - RUNTIME
+  - variable: NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN
+    value: "project-aivra.firebaseapp.com"
+    availability:
+      - BUILD
+      - RUNTIME
+  - variable: NEXT_PUBLIC_FIREBASE_PROJECT_ID
+    value: "project-aivra"
+    availability:
+      - BUILD
+      - RUNTIME
+  - variable: NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET
+    value: "project-aivra.firebasestorage.app"
+    availability:
+      - BUILD
+      - RUNTIME
+  - variable: NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID
+    value: "282866250246"
+    availability:
+      - BUILD
+      - RUNTIME
+  - variable: NEXT_PUBLIC_FIREBASE_APP_ID
+    value: "1:282866250246:web:415d7497efe463f4054987"
+    availability:
+      - BUILD
+      - RUNTIME
+  - variable: NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID
+    value: "G-PSLL5TZ5GX"
+    availability:
+      - BUILD
+      - RUNTIME
+  # TODO: update after the backend Cloud Function is deployed
+  # (`firebase deploy --only functions` prints the function URL).
+  - variable: NEXT_PUBLIC_API_URL
+    value: "https://us-central1-project-aivra.cloudfunctions.net/api"
+    availability:
+      - BUILD
+      - RUNTIME

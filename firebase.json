@@ -1,0 +1,15 @@
+{
+  "functions": [
+    {
+      "source": "backend",
+      "codebase": "default",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "*.log",
+        ".env*",
+        "error_cmd.txt"
+      ]
+    }
+  ]
+}
